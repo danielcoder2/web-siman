@@ -1,70 +1,99 @@
+/* Tipografías */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
 }
 
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Paleta de colores */
 header {
-    background-color: #007BFF;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: #c8102e;
+  color: white;
+  padding: 1em;
+  text-align: center;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+nav a {
+  color: white;
+  text-decoration: none;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
+.hero {
+  text-align: center;
+  padding: 2em;
+  background-color: #fff0f0;
 }
 
-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
+.hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
-.promocion {
-    margin-bottom: 20px;
+.cta {
+  display: inline-block;
+  margin-top: 1em;
+  background-color: #c8102e;
+  color: white;
+  padding: 0.75em 1.5em;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #007BFF;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+.eventos, .formulario {
+  padding: 2em;
+  background-color: #ffffff;
 }
 
 form {
-    margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-input[type="email"] {
-    padding: 10px;
-    width: 200px;
+input, button {
+  padding: 0.75em;
+  font-size: 1em;
 }
 
 button {
-    padding: 10px;
-    background-color: #28A745;
-    color: white;
-    border: none;
-    cursor: pointer;
+  background-color: #c8102e;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
-button:hover {
-    background-color: #218838;
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #333;
+  color: white;
 }
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .hero, .eventos, .formulario {
+    padding: 1em;
+  }
+}
+

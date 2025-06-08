@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Promociones Siman</title>
+  <title>Suscríbete</title>
   <link rel="stylesheet" href="css/styles.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Siman El Salvador</h1>
+    <h1>Suscríbete a Siman</h1>
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -19,11 +18,17 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <img src="img/promociones.jpg" alt="Promociones Siman">
-    <h2>¡Ofertas Exclusivas para Ti!</h2>
-    <p>Descubre descuentos únicos en tus marcas favoritas.</p>
-    <a href="contacto.html" class="cta">Suscríbete ahora</a>
+  <section class="formulario">
+    <h2>Recibe nuestras promociones</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <button type="submit">Suscribirme</button>
+    </form>
   </section>
 
   <footer>
